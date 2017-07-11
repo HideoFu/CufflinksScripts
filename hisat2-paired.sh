@@ -12,4 +12,4 @@ hisat2 -p $core -q --dta -x genome -1 ${EXP1}_1_val_1.fq -2 ${EXP1}_2_val_2.fq -
 
 mv ${EXP1}.sam ..
 
-cd ../HISAT
+cd ../Cufflinks
