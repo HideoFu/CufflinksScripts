@@ -9,4 +9,4 @@ cuffmerge -p $core -g $GTF gtf.txt
 
 cd ./Cufflinks
 
-#output: merged.gtf
+#output: ./merged_asm/merged.gtf
