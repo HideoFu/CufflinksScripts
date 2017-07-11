@@ -20,3 +20,5 @@ do
     export EXP1=$INDEX
     sh ./cuffquant.sh
 done
+
+sh ./cuffdiff.sh
