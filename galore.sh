@@ -14,4 +14,4 @@ trim_galore -o Trimmed ${EXP1}_1.fastq --fastqc --fastqc_args "--nogroup -t $COR
 
 mv ${EXP1}_1.fastq ./Raw
 
-cd ./HISAT
+cd ./Cufflinks
