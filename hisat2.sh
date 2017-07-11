@@ -12,4 +12,4 @@ hisat2 -p $core -q --dta -x genome -U ${EXP1}_1_trimmed.fq -S ${EXP1}.sam
 
 mv ${EXP1}.sam ..
 
-cd ../HISAT
+cd ../Cufflinks
