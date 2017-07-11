@@ -15,4 +15,4 @@ trim_galore -o Trimmed --paired ${EXP1}_1.fastq ${EXP1}_2.fastq --fastqc --fastq
 mv ${EXP1}_1.fastq ./Raw
 mv ${EXP1}_2.fastq ./Raw
 
-cd ./HISAT
+cd ./Cufflinks
