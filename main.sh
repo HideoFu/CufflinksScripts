@@ -9,6 +9,15 @@ for INDEX in $*
 do
     export EXP1=$INDEX
     
+    # switch paired reads
+    if [ -e ../${INDEX}_2.fastq ] ; then
+        sh ./galore-paired.sh
+        sh ./hisat2-paired.sh
+    else
+        sh ./galore.sh
+        sh ./hisat2.sh
+    fi
+    
     sh ./cufflinks.sh
     echo "./cufflinks_results/${INDEX}/transcripts.gtf" >> ../gtf.txt
 done
@@ -20,5 +29,3 @@ do
     export EXP1=$INDEX
     sh ./cuffquant.sh
 done
-
-sh ./cuffdiff.sh
